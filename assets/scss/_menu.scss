@@ -1,0 +1,45 @@
+#menu-byp{ 
+    position: relative;
+    background-color: transparent !important;
+ 
+    & .logo-byp {
+        margin-top: 5px;
+        max-width: 80px;
+    }
+}
+.nav-link {
+    font-family: 'Arco', sans-serif;
+    font-size: 1rem;
+    padding: 0rem .5rem !important;
+    font-weight: 500;
+    border-radius: 1rem;
+    border: solid 1.5px $color-blanco;
+}
+#navbarBYP {
+
+    margin-top: -35px !important;
+
+    & li.nav-item {
+        margin-right: .6rem;
+    }
+    & .nav-link {
+        color: $color-red !important;
+        background-color: $color-amarillo;
+    }
+
+    & .nav-link.active {
+        color: $color-blanco !important;
+        background-color: $color-red;
+    }
+}
+
+/* Forzar el icono de menú hamburguesa en blanco */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Opcional: quitar borde gris del botón */
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+  border: solid 1px $color-blanco;
+}

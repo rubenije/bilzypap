@@ -1,0 +1,23 @@
+Time : 00:40:42
+save : 
+
+Time : 00:40:42
+Imagen ya existe en nuestros registros.
+
+Time : 00:40:42
+SELECT COUNT(*) FROM registro WHERE regi_hash='91ebd2d67f0f5c442f717baf4080d2e5b2fd47b3b61ad13ddf0c17a83277ff3d'
+
+Time : 00:40:42
+file_6972edba90e98.jpg
+
+Time : 00:40:42
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+

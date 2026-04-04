@@ -1,0 +1,344 @@
+@media (max-width: 575px) {
+
+    .is-mobile { display: block; }
+    .is-desktop { display: none; }
+
+    html,
+    body {
+        background: url(../img/home/bg-sm-v1.png) no-repeat center top;
+        background-size: cover;
+    }
+
+    .layout-bg {
+        background: none; /* 👈 importante */
+    }
+
+    footer { border-bottom: solid 4px yellow; }
+
+    #menu-byp {
+        
+        & .logo-byp {
+            max-width: 90px;
+        }
+    }
+
+    .pasos {
+        margin-top: 50px;
+    }
+
+    .rellena {
+        max-width: 75% !important;
+        
+    }
+
+    #page-seleccion {
+        & .favorito {
+            margin-top: 60px;
+        }
+    }
+    #page-ganadores {
+        & .carousel-control-next {
+            right: -30px !important;
+            opacity: 1;
+        }
+        & .carousel-control-prev {
+            left: -30px !important;
+            opacity: 1;
+        }
+
+        
+        & .detalle {
+            font-size: .5rem !important;
+        }
+    }
+
+    main {
+        min-height: fit-content;
+    }
+
+    #page-premio {
+        
+        font-size: .4rem !important;
+
+        & .funpass {
+            width: 70%;
+        }
+        & .entradas {
+            font-size: .5rem !important;
+        }
+        & .destacado {
+            padding-top: 2px;
+            font-size: .5rem !important;
+        }
+        & .txt-premios {
+            margin-top: 60px;
+        }
+
+        & .legales {
+            font-size: .4rem !important;
+        }
+
+        
+    }
+    
+    #navbarBYP {
+        & .nav-link {
+            text-align: center;
+        }
+    } 
+    #menu-tico .logo-tico {
+        max-width: 200px;
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .is-mobile { display: block; }
+    .is-desktop { display: none; }
+
+    html,
+    body {
+        background: url(../img/home/bg-sm-v1.png) no-repeat center top;
+        background-size: cover;
+    }
+
+    .layout-bg {
+        background: none; /* 👈 importante */
+    }
+
+    footer { border-bottom: solid 4px red; }
+
+    footer {
+
+        font-size: .5rem;
+        line-height: 12px;
+        
+        & .bg-blanco {
+            background-color: $color-blanco;
+            height: 35px;
+            
+            & .convenio {
+                max-height: 28px;
+            }
+        }
+
+        & .bg-red {
+            background-color: $color-red;
+            height: 75px;
+        
+            & p {
+                margin-top: .5rem;
+                line-height: 9px;
+            }
+            & .fw-semibold {
+                line-height: 9px;
+            }
+            & .agencia-sm {
+                margin-top: .1rem; 
+                width: 20px;
+            }
+            & .terminos{
+                margin-top: .8rem;
+            }
+            & .rrss {
+
+                margin-top: .5rem;
+
+                & .siguenos {
+                    width: 100px;
+                    margin-right: 10px;
+                }
+                & .ico {
+                    margin-left: 5px;
+                    width: 20px;
+                }
+            }
+            
+        }
+
+
+        
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .is-mobile { display: block; }
+    .is-desktop { display: none; }
+
+    footer { border-bottom: solid 4px blue; }
+
+    html,
+    body {
+        background: url(../img/home/bg-sm-v1.png) no-repeat center top;
+        background-size: cover;
+    }
+
+    .layout-bg {
+        background: none; /* 👈 importante */
+    }
+
+    footer {
+
+        font-size: .5rem;
+        line-height: 12px;
+        
+        & .bg-blanco {
+            background-color: $color-blanco;
+            height: 35px;
+            
+            & .convenio {
+                max-height: 28px;
+            }
+        }
+
+        & .bg-red {
+            background-color: $color-red;
+            color: $color-blanco;
+            height: 65px;
+        
+            & p {
+                margin-top: .5rem;
+                line-height: 9px;
+            }
+            & .fw-semibold {
+                line-height: 9px;
+            }
+            & .agencia-sm {
+                margin-top: .1rem; 
+                width: 20px;
+            }
+            & .terminos{
+                margin-top: .8rem;
+            }
+            & .rrss {
+
+                margin-top: .5rem;
+
+                & .siguenos {
+                    width: 100px;
+                    margin-right: 10px;
+                }
+                & .ico {
+                    margin-left: 5px;
+                    width: 20px;
+                }
+            }
+            
+        }
+
+
+        
+    }
+
+    
+
+}
+/* Centrar logo solo en pantallas pequeñas */
+@media (max-width: 991.98px) { /* lg breakpoint de Bootstrap */
+  #page-index #menu-byp .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .layout-bg {
+    overflow: visible;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .is-mobile { display: none; }
+    .is-desktop { display: block; }
+
+    .layout-bg {
+        background: url(../img/home/bg-new.png) no-repeat center bottom;
+        background-size: cover;
+        overflow: visible;
+    }
+    
+    footer { border-bottom: solid 4px pink; }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .is-mobile { display: none; }
+    .is-desktop { display: block; }
+  
+
+    footer { border-bottom: solid 4px green; }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    .is-mobile { display: none; }
+    .is-desktop { display: block; }
+    
+    #page-premio {
+        
+        
+        & .txt-premios {
+            margin-top: -20px;
+            max-width: 50%;
+        }    
+        & .interior {
+            padding: 0rem 3rem;
+        }
+    }
+    #page-como-participar {
+        & .pasos {
+            margin-top: -30px;
+            padding: 0rem 4rem;
+        }    
+        
+    }
+    #page-seleccion {
+        & .favorito {
+            max-width: 60%;
+            margin-top: -30px;
+        } 
+        & .cartas {
+            padding: 0rem 4rem;
+        }
+
+        & .ticket{
+            max-width: 150px;
+        }
+    }
+    #formulario {
+
+        & form {
+            width: 75%;
+            font-size: .9rem;
+            font-weight: 600;
+        }
+        
+        & .rellena {
+            margin-top: -35px;
+            max-width: 45% !important;
+        }  
+    }
+    #page-ganadores {
+        & .ganadores-de-la-semana {
+             margin-top: -20px;
+        }
+        & #carouselLPC {
+            padding: 0rem 2rem;
+        }   
+    }
+
+    #page-preguntas {
+        & .tit-frecuentes {
+            margin-top: -30px;
+            max-width: 60%;
+        }    
+        & .accordion {
+            padding: 0rem 1rem;
+        }
+    }
+    
+  
+    footer { border-bottom: solid 4px orange; }
+}
+

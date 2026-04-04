@@ -1,0 +1,32 @@
+Hola! Buenas noches
+
+Les dejo los datos para poder acceder a los ambientes
+
+El acceso es el mismo
+
+root@104.248.230.74
+
+Ambiente de Producción (PROD) 
+URL: https://diversion.bilzypap.cl
+
+Ruta del Proyecto: /var/www/bilzypap-diversion/prod
+
+Base de Datos: bilzypap_prod_db
+
+Usuario BDD: bilzypap_prod_user
+
+Contraseña BDD: Qwerty12358.
+
+Host BDD: localhost
+
+
+Cualquier cosa me avisan!
+
+Saludos.
+
+
+
+6LczQFksAAAAABvq5sp3GrSwz5W8ISJlwF-10xQI
+
+
+6LczQFksAAAAAIHAkuDmbkhAWolUJ51obpvt_0-y

@@ -1,0 +1,191 @@
+Time : 23:26:00
+save : 1
+
+Time : 23:26:00
+INSERT INTO registro (comuna_id, regi_nombre, regi_apellido, regi_rut, regi_email, regi_telefono, regi_nacimiento, regi_edad, regi_mayor, regi_bases, regi_fecha, regi_hora, regi_estado, regi_etiqueta, regi_hash) VALUES (1, 'RUBEN', 'RICARTE SUAREZ', '14573093-7', 'ruben.ricarte@gmail.com', '977685105', '1976-08-05', '49', 'S', 'S', '2026-01-22', '23:26:00', 'A', 'file_6972dc38a53f1.jpg', '8c86914a0794d81c85daf557b2796bad97db5644cbd7e3997c5e1949bdf89d97')
+
+Time : 23:26:00
+SELECT COUNT(*) FROM registro WHERE regi_hash='8c86914a0794d81c85daf557b2796bad97db5644cbd7e3997c5e1949bdf89d97'
+
+Time : 23:26:00
+file_6972dc38a53f1.jpg
+
+Time : 23:26:00
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+
+
+Time : 23:24:03
+save : 
+
+Time : 23:24:03
+Imagen ya existe en nuestros registros.
+
+Time : 23:24:03
+SELECT COUNT(*) FROM registro WHERE regi_hash='3d310303c659884c25793d896dc3d193608e966e017edcf446bbc29f9ff1f019'
+
+Time : 23:24:03
+file_6972dbc3c1408.jpg
+
+Time : 23:24:03
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+
+
+Time : 23:23:51
+save : 1
+
+Time : 23:23:51
+INSERT INTO registro (comuna_id, regi_nombre, regi_apellido, regi_rut, regi_email, regi_telefono, regi_nacimiento, regi_edad, regi_mayor, regi_bases, regi_fecha, regi_hora, regi_estado, regi_etiqueta, regi_hash) VALUES (1, 'RUBEN', 'RICARTE SUAREZ', '14573093-7', 'ruben.ricarte@gmail.com', '977685105', '1976-08-05', '49', 'S', 'S', '2026-01-22', '23:23:51', 'A', 'file_6972dbb79ac0b.jpg', '3d310303c659884c25793d896dc3d193608e966e017edcf446bbc29f9ff1f019')
+
+Time : 23:23:51
+SELECT COUNT(*) FROM registro WHERE regi_hash='3d310303c659884c25793d896dc3d193608e966e017edcf446bbc29f9ff1f019'
+
+Time : 23:23:51
+file_6972dbb79ac0b.jpg
+
+Time : 23:23:51
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+
+
+Time : 23:23:26
+save : 1
+
+Time : 23:23:26
+INSERT INTO registro (comuna_id, regi_nombre, regi_apellido, regi_rut, regi_email, regi_telefono, regi_nacimiento, regi_edad, regi_mayor, regi_bases, regi_fecha, regi_hora, regi_estado, regi_etiqueta, regi_hash) VALUES (1, 'RUBEN', 'RICARTE SUAREZ', '14573093-7', 'ruben.ricarte@gmail.com', '977685105', '1976-08-05', '49', 'S', 'S', '2026-01-22', '23:23:26', 'A', 'file_6972db9e40aed.jpg', 'f3f868e0bd43b70f393cd89bbef1f5d9f12d2770b252c7fa5131c7dac5644f2e')
+
+Time : 23:23:26
+SELECT COUNT(*) FROM registro WHERE regi_hash='f3f868e0bd43b70f393cd89bbef1f5d9f12d2770b252c7fa5131c7dac5644f2e'
+
+Time : 23:23:26
+file_6972db9e40aed.jpg
+
+Time : 23:23:26
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+
+
+Time : 23:22:47
+save : 
+
+Time : 23:22:47
+Imagen ya existe en nuestros registros.
+
+Time : 23:22:47
+SELECT COUNT(*) FROM registro WHERE regi_hash='54b37b0ce6b665535436cb6b259038644358eaeaed99c25c27e93cee5fbb57a8'
+
+Time : 23:22:47
+file_6972db7752f30.jpg
+
+Time : 23:22:47
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+
+
+Time : 23:22:33
+save : 1
+
+Time : 23:22:33
+INSERT INTO registro (comuna_id, regi_nombre, regi_apellido, regi_rut, regi_email, regi_telefono, regi_nacimiento, regi_edad, regi_mayor, regi_bases, regi_fecha, regi_hora, regi_estado, regi_etiqueta, regi_hash) VALUES (1, 'RUBEN', 'RICARTE SUAREZ', '14573093-7', 'ruben.ricarte@gmail.com', '977685105', '1976-08-05', '49', 'S', 'S', '2026-01-22', '23:22:33', 'A', 'file_6972db695df59.jpg', '54b37b0ce6b665535436cb6b259038644358eaeaed99c25c27e93cee5fbb57a8')
+
+Time : 23:22:33
+SELECT COUNT(*) FROM registro WHERE regi_hash='54b37b0ce6b665535436cb6b259038644358eaeaed99c25c27e93cee5fbb57a8'
+
+Time : 23:22:33
+file_6972db695df59.jpg
+
+Time : 23:22:33
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+
+
+Time : 23:21:59
+save : 1
+
+Time : 23:21:59
+INSERT INTO registro (comuna_id, regi_nombre, regi_apellido, regi_rut, regi_email, regi_telefono, regi_nacimiento, regi_edad, regi_mayor, regi_bases, regi_fecha, regi_hora, regi_estado, regi_etiqueta, regi_hash) VALUES (1, 'RUBEN', 'RICARTE SUAREZ', '14573093-7', 'ruben.ricarte@gmail.com', '977685105', '1976-08-05', '49', 'S', 'S', '2026-01-22', '23:21:59', 'A', 'file_6972db47806e0.jpg', '5225b43a2817486c09c4109c6624bbc8a071a2916c8efcf1e14027a4cba02c6f')
+
+Time : 23:21:59
+SELECT COUNT(*) FROM registro WHERE regi_hash='5225b43a2817486c09c4109c6624bbc8a071a2916c8efcf1e14027a4cba02c6f'
+
+Time : 23:21:59
+file_6972db47806e0.jpg
+
+Time : 23:21:59
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+
+
+Time : 23:20:19
+save : 1
+
+Time : 23:20:19
+INSERT INTO registro (comuna_id, regi_nombre, regi_apellido, regi_rut, regi_email, regi_telefono, regi_nacimiento, regi_edad, regi_mayor, regi_bases, regi_fecha, regi_hora, regi_estado, regi_etiqueta, regi_hash) VALUES (1, 'RUBEN', 'RICARTE SUAREZ', '14573093-7', 'ruben.ricarte@gmail.com', '977685105', '1976-08-05', '49', 'S', 'S', '2026-01-22', '23:20:19', 'A', 'file_6972dae32902c.jpg', 'cea81ed483f43fa82294e1832483bbe2ac9402948d02082aeac974de0936e56f')
+
+Time : 23:20:19
+SELECT COUNT(*) FROM registro WHERE regi_hash='cea81ed483f43fa82294e1832483bbe2ac9402948d02082aeac974de0936e56f'
+
+Time : 23:20:19
+file_6972dae32902c.jpg
+
+Time : 23:20:19
+regi_nombre : RUBEN
+regi_apellido : RICARTE SUAREZ
+comuna_id : 1
+regi_telefono : 977685105
+regi_email : ruben.ricarte@gmail.com
+regi_rut : 14573093-7
+regi_nacimiento : 05/08/1976
+isValidFile : 1
+isValidRecapcha : 
+

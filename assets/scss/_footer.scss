@@ -1,0 +1,55 @@
+footer {
+    
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .5rem;
+    line-height: 12px;
+    background-color: $color-blanco;
+
+    position: relative;
+    height: auto;
+
+    & .bg-blanco {
+        
+        height: 35px;
+        
+        & .convenio {
+            max-height: 28px;
+        }
+    }
+
+    & .bg-blanco {
+        background-color: $color-blanco;
+        color: $color-negro;
+        height: 45px;
+    
+        & p {
+            margin-top: .5rem;
+            line-height: 9px;
+        }
+        & .agencia {
+            margin-top: .5rem; 
+            width: 10rem;
+        }
+        & .terminos{
+            margin-top: .8rem;
+        }
+        & .rrss {
+
+            margin-top: .5rem;
+
+            & .siguenos {
+                width: 100px;
+                margin-right: 10px;
+            }
+            & .ico {
+                margin-left: 5px;
+                width: 20px;
+            }
+        }
+        
+    }
+
+
+    
+}

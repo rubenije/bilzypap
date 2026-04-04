@@ -1,0 +1,28 @@
+.close {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    width: 50px;
+}
+
+.modal-content {
+    border: none;
+    background-color: transparent;
+    padding: 1rem .1rem;
+        
+}
+.modal-header {
+    border-bottom: none;
+    padding: 0rem 1rem;
+}
+#modalFelicidades {
+    & .modal-content {
+        padding: .5rem .5rem;
+    }
+}
+
+#modalUps {
+    & .modal-content {
+        padding: 1rem .5rem;
+    }
+}

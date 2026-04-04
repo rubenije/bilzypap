@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@font-face {
+  font-family: 'Arco';
+  src: url('../fonts/ARCO.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ARCO.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ARCO.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/ARCO.woff') format('woff'),   /* Modern Browsers */
+       url('../fonts/ARCO.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ARCO.otf') format('opentype'); /* Optional: OTF */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'helsinkiregular';
+    src: url('../fonts/helsinki-webfont.woff2') format('woff2'),
+         url('../fonts/helsinki-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+.grecaptcha-badge { 
+    visibility: hidden !important;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 0 auto;
+    z-index: 20;
+    position: relative;
+}
+
+main {
+    flex: 1 1 auto;
+    position: relative;
+    overflow: visible;
+    padding-top: 90px;
+}
+
+.layout-bg {
+  background: url(../img/home/bg-new.png) no-repeat center bottom;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Estructura General */
+.bill-y-mike {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-width: clamp(300px, 50vw, 720px);
+    object-fit: contain;
+}
+
+
+.bill-y-mike {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.bill-y-mike-sm {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+.bill-y-mike-smx{ 
+    margin-top: 1rem; 
+    max-width: 80% !important; 
+}
+
+/* Estructura general: columna y la zona “hero” ocupa el espacio libre */
+#page-index {
+    .funpass {
+        width: 350px;
+        position: relative;
+        z-index: 2;
+        margin-top: -120px;
+    }
+
+    .funpass-sm {
+        width: 90%;
+        position: relative;
+        z-index: 2;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .btn-participa {
+        width: 360px;
+        left: 220px;
+        bottom: 50px;
+        position: absolute;
+    }
+
+    .btn-participa-sm {
+        width: 300px;
+        position: relative;
+        z-index: 2;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+#formulario {
+
+    .btn-img {
+        cursor: pointer;
+        line-height: 0;        /* elimina espacio extra alrededor de la imagen */
+        background: transparent;
+        box-shadow: none;
+        //margin-top: -50px;
+    }
+    /*
+    .btn-img:focus {
+        outline: 2px solid #fff;
+        outline-offset: 2px;
+    }
+    */
+
+    /* Quitar el “amarillo” de autofill en iOS/Safari/Chrome WebKit */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    textarea:-webkit-autofill {
+    -webkit-text-fill-color: $color-blanco;
+    /* Pinta el fondo del campo reemplazando el amarillo */
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+            box-shadow: 0 0 0px 1000px transparent inset;
+    /* Evita parpadeos al terminar la animación de WebKit */
+    transition: background-color 99999s ease-in-out 0s;
+    }
+
+
+    
+
+    /* Estilos generales del select */
+    select[name="comuna_id"] {
+        background-color: $color-premios !important;  /* Fondo oscuro */
+        color: $color-negro;             /* Texto blanco */
+        border-radius: 6px;
+        padding: 6px;
+        appearance: none;        /* Quitar estilos del navegador */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: 600;
+    }
+
+    /* Opciones dentro del select */
+    select[name="comuna_id"] option {
+        background-color: $color-premios !important; /* Fondo oscuro */
+        color: $color-negro;            /* Texto blanco */
+    }
+
+    /* Opción seleccionada al hacer click */
+    select[name="comuna_id"] option:checked,
+    select[name="comuna_id"]:focus option:checked {
+        background-color: $color-premios !important; /* Fondo más oscuro */
+        color: $color-negro
+    }
+
+    /* Mejor visibilidad al pasar el mouse sobre opciones */
+    select[name="comuna_id"] option:hover {
+        background-color: #666;
+        color: #fff;
+    }
+
+    & .rellena {
+        max-width: 100%;
+    }
+
+    & form {
+        font-size: .7rem;
+        font-weight: 700;
+    }
+    & .bg-azul{
+        background-color: $color-premios;
+        border-radius: 20px;
+        padding: .1rem .5rem;
+        width: 90%;
+    }
+    input.form-check-input[type="checkbox"] {
+        width: 1.2em;
+        height: 1.2em;
+        background-color: $color-red;
+        border: 1.5px solid $color-blanco;
+        border-radius: 10px;
+    }
+    
+    label.form-check-label{
+        color: $color-blanco;
+        font-size: 10px;
+    }
+    & .form-text {
+        color: $color-red;
+        margin-left: 20px;
+        margin-top: -2px;
+        min-height: 8px;
+    }
+    & .field {
+        position: relative;
+        color: $color-blanco;
+
+        
+    
+        & label {
+            position: absolute;
+            top: 50%; 
+            left: 15px; 
+            transform: translateY(-50%);
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            pointer-events: none;
+        }
+
+        & input,
+        & select {
+            background: $color-premios;
+            border: 1.5px solid $color-blanco;
+            border-radius: 30px;
+            color: $color-blanco;
+            padding: 2px 10px;
+            width: 90%;
+        }
+        
+        & input:focus + label,
+        & input:not(:placeholder-shown) + label {
+            top: -8px;
+            font-size: .7rem;
+            background: $color-premios;
+            display: none;
+        }
+
+    }
+
+
+    & .upload {
+        width: 90%;
+        border: 1.5px solid $color-blanco;
+        background: $color-premios;
+        border-radius: 20px;
+        
+        & .btnUpload {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        & p {
+            font-size: .7rem;
+            padding-top: .1rem;
+            margin-left: 15px;
+            margin-bottom: 2px;
+            line-height: 12px;
+            width: 100px;
+        }
+
+        & .seleccion {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-top: .5rem;
+            
+            & span {
+                font-size: 0.7em;
+                font-weight: 700;
+                color: $color-blanco;
+            }
+
+            & img {
+                max-height: 25px;
+            }
+        }
+
+    }
+
+    #targetLayer {
+        width: 200px;
+        margin: 0 auto;
+        padding: 5px 5px;
+    }
+}
+
+#page-seleccion {
+
+    & .favorito {
+        max-width: 85%;
+    }
+    & .ticket{
+        display:block;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: transform .12s ease, box-shadow .12s ease, filter .12s ease, outline-offset .12s ease;
+        outline: 0 solid transparent;      /* no ocupa espacio */
+        outline-offset: 0;
+        max-width: 190px;
+    }
+    & .ticket:hover{
+        transform: translateY(-2px);
+        filter: saturate(1.05);
+    }
+    & .ticket.selected{
+        outline: 4px solid #ffc107;        /* tu $color-premios aquí si quieres */
+        outline-offset: 4px;
+        box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    }
+    & .ticket:focus{ outline: none; }
+    & .ticket:focus-visible{
+        outline: 3px solid #fff;
+        outline-offset: 3px;
+        border-radius: 16px;
+    }
+    & .form-text {
+        color: $color-red;
+        background-color: $color-amarillo;
+        text-align: center;
+        font-size: 1rem;
+    }
+    /*
+    & .ticket {
+        max-width: 190px;
+    }
+
+    */
+
+    & .up {
+        margin-top: -50px;
+        margin-right: -40px;
+    }
+
+    & .btnEnviarSeleccion {
+        cursor: pointer;
+        max-width: 190px;
+    }
+
+    
+    
+}
+
+/* PAGINA PREMIO */
+#page-premio {
+
+    color: $color-blanco;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 500;
+
+
+
+    
+    & .funpass {
+        width: 350px;
+    }
+    
+    & .ganadores {
+        line-height: 13px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+
+    }
+
+    & .premio {
+        background-color: $color-premios;
+        border: solid 1.5px $color-blanco;
+        border-radius: 1.2rem;
+        margin-bottom: .3rem;
+        padding: .1rem .2rem;
+        
+
+        & .text-start {
+            padding-left: 20px;
+        }
+        & .destacado {
+            font-size: .8rem;
+            font-weight: 700;
+        }
+        & .entradas {
+            font-size: .8rem;
+            font-weight: 700;
+        }
+    }
+
+    & .txt-10-ganadores {
+       margin-top: 1rem;
+    }
+
+    & .legales {
+        font-size: .6rem;
+        margin-top: .9rem;
+        line-height: .8rem;
+        text-align: center;
+        font-weight: 800;
+    }
+    .txt-white {
+        color: $color-blanco !important;
+        text-decoration: underline; /* opcional */
+    }
+}
+
+/* PAGINA COMO PARTICIPAR */
+#page-como-participar {
+
+    & .pasos {
+        margin-top: -6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        & img.step {
+            max-width: 90%;
+            margin-bottom: 5px;
+        }
+    }
+    & .paso-felicitaciones {
+        margin-top: 1rem;
+        max-width: 70%;
+    }
+    & .paso-02 {
+        margin-top: -15px;
+    }
+    & .paso-03 {
+        margin-top: -35px;
+    }
+    & .paso-04 {
+        margin-top: -38px;       
+    }
+        
+}
+
+/* PAGINA GANADORES */
+#page-ganadores {
+
+    
+    & .destacado {
+        color: $color-blanco;
+        display: block;
+        padding: .2rem 1rem;
+        display: inline-flex;
+        font-size: 1rem;
+        font-weight: 800;
+
+        & .fecha {
+            width: 50px;
+            background-color: $color-amarillo;
+            border-radius: 1rem;
+            margin-left: .3rem;
+            margin-right: .3rem;
+            color: $color-rosado;
+            border: solid 2px $color-blanco;
+        }
+    }
+    
+    & .titulo {
+        color: $color-blanco;
+        font-weight: 800;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    /*
+    & .detalle {
+        margin-top: .3rem;
+        font-weight: 800;
+        border-radius: .5rem;
+        
+    }
+    */
+
+    
+
+    //#carouselLPC table {
+    //    background-color: transparent !important;
+    //}
+
+    #carouselLPC td,
+    #carouselLPC th {
+    background-color: transparent !important;
+    color: $color-blanco !important;
+    border: none !important;
+    }
+
+    & #carouselLPC {
+        background-color: transparent !important;
+        padding-top: .5rem;
+        
+        & .carousel-control-next {
+            right: -50px;
+            opacity: 1;
+        }
+        & .carousel-control-prev {
+            left: -50px;
+            opacity: 1;
+        }
+        
+
+        & .carousel-inner,
+        & .carousel-item {
+            background-color: transparent !important;
+        }
+        
+        & table {
+            background-color: transparent !important;
+            background: transparent !important;
+        }
+        
+        & .table>:not(caption)>*>* {
+            padding: 0.1rem 0.2rem;
+        }
+        & .detalle {
+            width: 100%;
+            font-size: .8rem;
+            font-weight: 500;
+            background-color: $color-premios;
+            border-radius: 1.2rem;
+            border: solid 2px $color-blanco;
+            padding-top: .1rem;
+        }
+
+        
+        
+    }
+}
+
+/* Page Preguntas Frecuentes */
+#page-preguntas {
+
+    & #accordionBYP {
+
+        & .accordion-button .icono-toggle {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('../img/arrow-up.png');
+        }
+
+        & .accordion-button:not(.collapsed) .icono-toggle {
+            background-image: url('../img/arrow-down.png'); 
+        }
+
+        & .accordion-item {
+
+            background-color: transparent;
+            border: none;
+            margin-bottom: .4rem;
+            
+            & .accordion-button {
+                border-radius: 1rem;
+                border: solid 2px $color-blanco;
+                color: $color-blanco;
+                font-size: .8rem;
+                font-weight: 500;
+                padding: .2rem .8rem;
+                box-shadow: none;
+            }
+            & .accordion-button.collapsed {
+                background-color: $color-premios !important;
+            }
+            & .accordion-button:not(.collapsed) {
+                background-color: $color-premios !important;
+            }
+            & .accordion-button::after {
+                display: none !important;
+            }
+            & .accordion-collapse {
+                margin-top: .2rem;
+                margin-left: .5rem;
+                margin-right: .5rem;
+                background-color: $color-premios !important;
+                color: $color-blanco;   
+                border-radius: 1rem;
+                border: solid 1px $color-blanco;
+                font-size: .8rem;
+                text-align: justify;
+                line-height: .7rem;
+            }
+            & .accordion-body {
+                padding: .4rem .6rem;
+                line-height: .9rem;
+            }
+        }
+    }
+}
+
+
+.loading { 
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 999; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    & div { 
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-top:-32px;
+        margin-left:-32px;
+    }
+
+    .lds-heart {
+        color:$color-rosado;
+    }
+    
+    .lds-heart,
+    .lds-heart div,
+    .lds-heart div:after,
+    .lds-heart div:before {
+      box-sizing: border-box;
+    }
+    .lds-heart {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+      transform: rotate(45deg);
+      transform-origin: 40px 40px;
+    }
+    .lds-heart div {
+      top: 28px;
+      left: 28px;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: currentColor;
+      animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .lds-heart div:after,
+    .lds-heart div:before {
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: currentColor;
+    }
+    .lds-heart div:before {
+      left: -24px;
+      border-radius: 50% 0 0 50%;
+    }
+    .lds-heart div:after {
+      top: -24px;
+      border-radius: 50% 50% 0 0;
+    }
+    @keyframes lds-heart {
+      0% {
+        transform: scale(0.95);
+      }
+      5% {
+        transform: scale(1.1);
+      }
+      39% {
+        transform: scale(0.85);
+      }
+      45% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(0.95);
+      }
+      100% {
+        transform: scale(0.9);
+      }
+    }
+}
