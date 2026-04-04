@@ -1,3 +1,19 @@
+# Base de datos
+*.sql
+*.dump
+
+# Archivos sensibles
+.env
+.env.local
+
+# Logs
+*.log
+
+# Archivos temporales
+/tmp
+/node_modules
+/vendor
+
 bilzypap_prod_db.sql
 adminer-4.8.1.php
 accesos.txt
